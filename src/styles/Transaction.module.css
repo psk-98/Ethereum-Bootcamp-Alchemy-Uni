@@ -1,0 +1,17 @@
+.header {
+  text-align: center;
+  font-size: 3rem;
+  margin: 0 0 3rem 0;
+}
+.content {
+  margin: 1rem 0;
+  border: 1px solid #b25ff3;
+  box-shadow: #b25ff3 1px 1px 2px;
+  padding: 4rem 2rem;
+}
+.content div {
+  margin: 2rem 0;
+}
+.content a {
+  color: #b25ff3;
+}

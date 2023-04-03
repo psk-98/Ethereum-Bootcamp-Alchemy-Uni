@@ -1,0 +1,4 @@
+//show list of least blocks
+// click on block to see transactions
+// click on transaction to see details
+// accounts where users can get account balance
