@@ -38,3 +38,9 @@
   font-weight: bold;
   font-size: 3rem;
 }
+
+@media (prefers-color-scheme: dark) {
+  .walletWrapper form {
+    background: #151515;
+  }
+}

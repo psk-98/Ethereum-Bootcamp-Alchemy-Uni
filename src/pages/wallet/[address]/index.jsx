@@ -17,7 +17,8 @@ export default function Wallet() {
   const { address } = router.query
 
   const getBalance = async () => {
-    setBalance(await alchemy.core.getBalance(walletAddress))
+    if (!walletAddress) setBalance(await alchemy.core.getBalance(address))
+    else setBalance(await alchemy.core.getBalance(walletAddress))
   }
 
   useEffect(() => {
@@ -25,16 +26,17 @@ export default function Wallet() {
       setWalletAddress(address)
       getBalance()
     }
-  }, [])
+  }, [address])
 
   return (
     <div className={styles.walletWrapper}>
-      {address}
+      {console.log(walletAddress)}
       <form onSubmit={() => getBalance()}>
         <div className={styles.inputGroup}>
           <input
             type="text"
             placeholder="Enter a wallet address or ENS"
+            value={walletAddress}
             onChange={(e) => setWalletAddress(e.target.value)}
           />
         </div>

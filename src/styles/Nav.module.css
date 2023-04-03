@@ -9,13 +9,14 @@
 .navLinks {
   display: flex;
 }
-.logo {
-  stroke: #eee;
-}
-
 .navLink {
   background: #b25ff3;
   margin: 0 3rem;
   padding: 0.75rem 2rem;
   color: #eee;
+}
+@media (prefers-color-scheme: dark) {
+  .logo {
+    stroke: #eee;
+  }
 }
