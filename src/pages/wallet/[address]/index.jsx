@@ -57,7 +57,7 @@ export default function Wallet() {
       </form>
       {balance && (
         <div class={styles.balance}>
-          Balance: {` ${formatEther(balance?.toString())}`}
+          Balance: {` ${formatEther(balance?.toString())} `} ETH
         </div>
       )}
     </div>
